@@ -1,0 +1,19 @@
+Window,Subject,Phase,Accuracy
+narrow_3.5-5.0s (original),P1,pre,0.7375
+narrow_3.5-5.0s (original),P1,post,0.9375
+narrow_3.5-5.0s (original),P2,pre,0.8125
+narrow_3.5-5.0s (original),P2,post,0.9625
+narrow_3.5-5.0s (original),P3,pre,0.825
+narrow_3.5-5.0s (original),P3,post,0.9
+wide_3.5-8.0s,P1,pre,0.8
+wide_3.5-8.0s,P1,post,0.9125
+wide_3.5-8.0s,P2,pre,0.7875
+wide_3.5-8.0s,P2,post,1.0
+wide_3.5-8.0s,P3,pre,0.9625
+wide_3.5-8.0s,P3,post,0.9125
+full_2.0-8.0s,P1,pre,0.7625
+full_2.0-8.0s,P1,post,0.825
+full_2.0-8.0s,P2,pre,0.6875
+full_2.0-8.0s,P2,post,0.95
+full_2.0-8.0s,P3,pre,0.9375
+full_2.0-8.0s,P3,post,0.925

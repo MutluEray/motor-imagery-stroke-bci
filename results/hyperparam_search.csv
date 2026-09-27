@@ -1,0 +1,7 @@
+Subject,Phase,n_components,shrinkage,CV_Accuracy,Test_Accuracy
+P1,pre,8,,96.25,76.25
+P1,post,2,,98.75,90.0
+P2,pre,6,,75.0,81.25
+P2,post,6,auto,95.0,98.75
+P3,pre,4,,88.75,82.5
+P3,post,6,auto,88.75,92.5

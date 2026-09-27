@@ -1,0 +1,7 @@
+Subject,Phase,TVLDA_ours,CSP+LDA_paper,TVLDA_paper
+P1,pre,82.5,79.7,100.0
+P1,post,93.75,68.4,72.4
+P2,pre,60.0,77.1,92.9
+P2,post,90.0,93.9,97.0
+P3,pre,88.75,96.1,97.4
+P3,post,90.0,74.4,93.6
