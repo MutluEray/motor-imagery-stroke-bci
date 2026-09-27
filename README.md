@@ -25,7 +25,7 @@ therapy in between), 80 trials/class per session.
   small-trial-count MI-BCI and don't require the component-count tuning
   CSP does.
 
-## Benchmarks from the original hackathon (`overview.pdf`)
+## Benchmarks from the original hackathon (BCI 2023-Winter School)
 
 | Subject | CSP+LDA | PCA+TVLDA |
 |---|---|---|
