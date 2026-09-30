@@ -1,29 +1,9 @@
-# Motor Imagery BCI for Stroke Rehabilitation — Python rewrite
+# Motor Imagery BCI for Stroke Rehabilitation
 
-Python/scikit-learn rewrite of a MATLAB motor-imagery BCI pipeline from the
-IEEE SMC BR41N.IO Hackathon (g.tec Medical Engineering), decoding imagined
+A motor-imagery BCI pipeline from the BR41N.IO Hackathon (g.tec Medical Engineering), decoding imagined
 left vs. right hand movement from 16-channel EEG for stroke rehabilitation.
 3 patients, each with a pre- and post-therapy session (25 BCI sessions of
 therapy in between), 80 trials/class per session.
-
-## What changed from the original MATLAB version
-
-- **Bandpass narrowed to 8–30 Hz** (mu+beta), not the original 1–40 Hz
-  broadband — matches the ERD/ERS-relevant band used in the published
-  methodology this repo replicates.
-- **CSP is now regularized** (`reg="ledoit_wolf"`). Common average
-  referencing makes the channel covariance matrix rank-deficient by
-  construction; without shrinkage, CSP's eigenvalue solve can fail outright
-  on real data, not just underperform.
-- **The original filterbank-CSP attempt (`new_main.m`) had a bug**: it
-  built a proper 9-band filterbank but then sliced to `(:,:,1)` — band 1
-  is 4–8 Hz (theta), so the CSP transform never actually saw mu or beta.
-  This repo's CSP+LDA baseline fixes that by operating directly on a
-  correctly-banded 8–30 Hz signal instead.
-- **Riemannian geometry classifiers added** (`pyriemann`): tangent-space
-  logistic regression and MDM. These are the current standard for
-  small-trial-count MI-BCI and don't require the component-count tuning
-  CSP does.
 
 ## Benchmarks from the original hackathon (BCI 2023-Winter School)
 
@@ -84,7 +64,6 @@ scripts/
   01_run_all_models.py
 data/                   # your .mat files (git-ignored, never committed)
 results/                # model_comparison.csv
-figures/                # (reserved for later showcase plots)
 ```
 
 ## References
